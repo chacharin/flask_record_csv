@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Data Entry Form</h2>
+    <form action="/submit" method="POST">
+        <div class="input-group">
+            <label for="input1">Field 1:</label>
+            <input type="text" id="input1" name="field1" required>
+        </div>
+        <div class="input-group">
+            <label for="input2">Field 2:</label>
+            <input type="text" id="input2" name="field2" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
