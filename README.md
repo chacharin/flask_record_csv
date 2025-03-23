@@ -18,3 +18,9 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install flask
+
+data-entry-web-app/
+├── templates/
+│   └── index.html    # Web interface template
+├── app.py           # Main application
+└── README.md        # Documentation
